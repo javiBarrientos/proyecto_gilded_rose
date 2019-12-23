@@ -8,8 +8,8 @@ class Item:
         return "%s, %s, %s" % (self.name, self.sell_in, self.quality)
 
 
-class NormalItem(Item):
-    def set_sellIn(self):
+class Normal_item(Item):
+    def set_sell_in(self):
         self.sell_in - 1
 
     def update_quality(self):
