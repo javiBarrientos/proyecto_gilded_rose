@@ -9,6 +9,10 @@ class Item:
 
 
 class Normal_item(Item):
+    def __init__(self, update_quality, set_sell_in):
+        self.update_quality = update_quality
+        self.set_sell_in = set_sell_in
+
     def set_sell_in(self):
         self.sell_in - 1
 
