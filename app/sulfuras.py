@@ -6,5 +6,5 @@ class Sulfuras(Normal_item):
         return sell_in
 
 
-if if __name__ == "__main__":
+if __name__ == "__main__":
     pass
