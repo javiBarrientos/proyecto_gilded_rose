@@ -4,6 +4,3 @@ class Aged_brie(Normal_item):
             return quality + 1
         else:
             return quality + 2
-
-
-if __name__ == "__main__":
