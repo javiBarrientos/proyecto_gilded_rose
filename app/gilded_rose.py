@@ -1,3 +1,8 @@
+from aged_brie import Aged_brie
+from backstage_passes import Backstage_passes
+from sulfuras import Sulfuras
+
+
 class Gilded_rose(object):
 
     def __init__(self, items):
