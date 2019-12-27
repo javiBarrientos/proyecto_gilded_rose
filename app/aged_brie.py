@@ -1,6 +1,8 @@
 class Aged_brie(Normal_item):
+    @override
     def update_quality(self, update_quality, set_sell_in):
-        if set_sell_in >= 0:
-            return update_quality + 1
+        i = 0
+        while i < self.set_sell_in:
+            return self.update_quality + 1
         else:
-            return update_quality + 2
+            return self.update_quality + 2
