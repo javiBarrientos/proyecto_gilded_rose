@@ -28,8 +28,8 @@ class Normal_item(Item):
         self.set_sell_in = set_sell_in
 
     def set_sell_in(self):
-        self.sell_in - 1
+        self.set_sell_in - 1
 
     def update_quality(self):
-        if self.quality < 50 and self.quality > 0:
-            self.quality - 1
+        if self.update_quality < 50 and self.update_quality > 0:
+            self.update_quality - 1
