@@ -2,9 +2,9 @@ from gilded_rose import Normal_item
 
 
 class Aged_brie(Normal_item):
-    def update_quality(self, update_quality, set_sell_in):
+    def update_quality(update_quality, set_sell_in):
         i = 0
-        while i < self.set_sell_in:
-            return self.update_quality + 1
+        while i < set_sell_in:
+            return update_quality + 1
         else:
-            return self.update_quality + 2
+            return update_quality + 2
