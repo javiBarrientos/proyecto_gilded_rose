@@ -5,10 +5,13 @@ class Aged_brie(Normal_item):
     def update_quality(update_quality, set_sell_in):
         i = 0
         while i < set_sell_in:
-            return update_quality + 1
-            i = + 1
-            set_sell_in = -1
+            update_quality = update_quality + 1
+            i = i + 1
+            set_sell_in = set_sell_in - 1
         else:
-            return update_quality + 2
-            i = + 1
-            set_sell_in = - 1
+            update_quality = update_quality + 2
+            i = i + 1
+            set_sell_in = set_sell_in - 1
+
+        return update_quality
+        return set_sell_in
