@@ -7,6 +7,8 @@ class Aged_brie(Normal_item):
         while i < set_sell_in:
             return update_quality + 1
             i = + 1
+            set_sell_in = -1
         else:
             return update_quality + 2
             i = + 1
+            set_sell_in = - 1
