@@ -15,5 +15,3 @@ class Aged_brie(Normal_item):
                 set_sell_in -= 1
 
         return update_quality, set_sell_in
-
-    print(update_quality(0, 10))
