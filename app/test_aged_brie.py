@@ -6,5 +6,4 @@ def test_primer_caso():
 
 
 def test_dias_negativos():
-    assert Aged_brie.update_quality(
-        20, -5) == Aged_brie.update_quality(40, -10)
+    assert Aged_brie.update_quality(51, 30) == False
