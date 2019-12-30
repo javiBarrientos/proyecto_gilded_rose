@@ -1,10 +1,15 @@
+from gilded_rose import Normal_item
+
+
 class Sulfuras(Normal_item):
-    def update_quality(self, quality):
-        return quality
+    def __init__(self, sell_in, quality):
+        self.sell_in = sell_in
+        self.quality = quality
 
-    def set_sell_in(self, sell_in):
-        return sell_in
+    def update_quality(self):
+        assert self.update_quality == 50
+        return self.quality
 
-
-if __name__ == "__main__":
-    pass
+    def set_sell_in(self):
+        assert self.sell_in == 0
+        return self.sell_in
