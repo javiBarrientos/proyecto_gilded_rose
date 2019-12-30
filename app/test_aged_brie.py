@@ -1,4 +1,4 @@
-from aged_brie import Aged_brie
+from aged_brie import *
 
 
 def test_primer_caso():
