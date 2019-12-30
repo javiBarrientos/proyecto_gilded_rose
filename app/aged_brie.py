@@ -6,16 +6,14 @@ class Aged_brie(Normal_item):
         self.sell_in = sell_in
         self.quality = quality
 
-    def update_quality(sell_in, quality):
-        while quality < 50:
-            if quality > 50:
-                quality += 0
-                sell_in -= 1
-                if sell_in < 0:
-                    quality += 2
-                    sell_in -= 1
-            else:
-                quality += 1
-                sell_in -= 1
+    def update_quality(self):
+        if self.sell_in > 0:
+            self.quality + 1
+            return self.quality
+        else:
+            self.quality + 2
+            return self.quality
 
-        return sell_in, quality
+    def set_sell_in(self):
+        self.sell_in - 1
+        return self.sell_in
