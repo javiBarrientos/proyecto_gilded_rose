@@ -6,7 +6,6 @@ class Aged_brie(Normal_item):
         self.sell_in = sell_in
         self.quality = quality
 
-    @override
     def update_quality(self):
         if self.sell_in > 0:
             self.quality + 1
