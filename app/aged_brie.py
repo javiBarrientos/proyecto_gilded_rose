@@ -13,7 +13,3 @@ class Aged_brie(Normal_item):
         else:
             self.quality + 2
             return self.quality
-
-    def set_sell_in(self):
-        self.sell_in - 1
-        return self.sell_in

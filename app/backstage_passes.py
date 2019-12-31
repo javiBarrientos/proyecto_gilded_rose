@@ -16,7 +16,3 @@ class Backstage_passes(Normal_item):
         else:
             self.quality = 0
             return self.quality
-
-    def set_sell_in(self):
-        self.sell_in - 1
-        return self.sell_in
