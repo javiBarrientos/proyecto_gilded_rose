@@ -1,7 +1,7 @@
-from aged_brie import *
+from aged_brie import Aged_brie
 
 
 def test_primer_caso():
-    brownie = Aged_brie("brownie", 10, 0)
-    brownie.update_quality()
-    brownie.set_quality(80)
+    bollicao = Aged_brie("bollicao", 10, 50)
+    bollicao.update_quality()
+    bollicao.set_quality(80)
