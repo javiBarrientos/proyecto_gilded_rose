@@ -16,6 +16,12 @@ class Normal_item(Item):
         else:
             self.quality -= 2
 
+    def check_quality(self):
+        if self.quality < 0:
+            self.quality = 0
+        if self.quality > 50:
+            self.quality = 50
+
 
 '''
     def set_quality(self, value):
