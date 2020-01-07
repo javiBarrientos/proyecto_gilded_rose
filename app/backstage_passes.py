@@ -8,12 +8,17 @@ class Backstage_passes(Normal_item):
         self.quality = quality
 
     def update_quality(self):
-        if self.sell_in < 10 and self.sell_in > 5:
-            self.quality + 2
+        if self.sell_in <= 10 and self.sell_in > 5:
+            self.quality += 2
             return self.quality
         if self.sell_in < 5 and self.sell_in > 0:
-            self.quality + 3
+            self.quality += 3
             return self.quality
         else:
             self.quality = 0
             return self.quality
+
+    def update_item(self):
+        Backstage_passes.update_quality(self)
+        Normal_item.update_sell_in(self)
+        Normal_item.check_quality(self)
