@@ -14,3 +14,8 @@ class Conjured(Normal_item):
         else:
             self.quality -= 2
             return self.quality
+
+    def update_item(self):
+        Conjured.update_quality(self)
+        Normal_item.update_sell_in(self)
+        Normal_item.check_quality(self)
