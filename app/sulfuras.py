@@ -7,7 +7,7 @@ class Sulfuras(Normal_item):
         self.sell_in = sell_in
         self.quality = quality
 
-    def set_sell_in(self):
+    def update_sell_in(self):
         assert self.sell_in == 0
         return self.sell_in
 

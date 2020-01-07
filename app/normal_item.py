@@ -7,7 +7,7 @@ class Normal_item(Item):
         self.sell_in = sell_in
         self.quality = quality
 
-    def set_sell_in(self):
+    def update_sell_in(self):
         self.sell_in -= 1
 
     def update_quality(self):
