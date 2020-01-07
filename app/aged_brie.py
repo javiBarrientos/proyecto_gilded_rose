@@ -12,3 +12,9 @@ class Aged_brie(Normal_item):
             self.quality + 1
         else:
             self.quality + 2
+        return self.quality
+
+    def update_item(self):
+        Normal_item.update_sell_in(self)
+        Normal_item.check_quality(self)
+        Aged_brie.update_quality(self)
