@@ -9,12 +9,12 @@ class Aged_brie(Normal_item):
 
     def update_quality(self):
         if self.sell_in > 0:
-            self.quality + 1
+            self.quality += 1
         else:
-            self.quality + 2
+            self.quality += 2
         return self.quality
 
     def update_item(self):
+        Aged_brie.update_quality(self)
         Normal_item.update_sell_in(self)
         Normal_item.check_quality(self)
-        Aged_brie.update_quality(self)
