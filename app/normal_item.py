@@ -28,3 +28,6 @@ class Normal_item(Item):
         Normal_item.update_sell_in(self)
         Normal_item.update_quality(self)
         Normal_item.check_quality(self)
+
+    def updated_item(self):
+        return self.name, self.sell_in, self.quality
