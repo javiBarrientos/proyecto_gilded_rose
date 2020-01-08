@@ -15,6 +15,6 @@ def test_segundo_caso():
 
 def test_tercer_caso():
     taza = Normal_item("taza", 10, 10)
-    for x in range(1, 21):
+    for day in range(1, 21):
         taza.update_item()
     assert taza.updated_item() == ("taza", -10, 0)

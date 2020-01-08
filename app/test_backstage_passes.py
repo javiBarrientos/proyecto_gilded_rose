@@ -9,13 +9,13 @@ def test_primer_caso():
 
 def test_segundo_caso():
     concierto = Backstage_passes("concierto", 10, 0)
-    for x in range(1, 11):
+    for day in range(1, 11):
         concierto.update_item()
     assert concierto.updated_item() == ("concierto", 0, 12)
 
 
 def test_tercer_caso():
     concierto = Backstage_passes("concierto", 10, 0)
-    for x in range(1, 16):
+    for day in range(1, 16):
         concierto.update_item()
     assert concierto.updated_item() == ("concierto", -5, 0)
