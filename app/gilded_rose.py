@@ -12,7 +12,8 @@ class Gilded_rose(object, Normal_item):
         self.items = items
 
     def update_quality(self):
-        for item in self.inventario:
+        for item in self.items:
+            item.update_quality()
             self.update_quality()
 
     def items(self):
