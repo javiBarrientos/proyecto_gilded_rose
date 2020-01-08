@@ -1,3 +1,4 @@
+'''
 from gilded_rose import Gilded_rose
 
 
@@ -13,3 +14,4 @@ def test_primer_caso():
         Backstage_passes("Backstage passes to a TAFKAL80ETC concert", 5, 49),
         Conjured("Conjured Mana Cake", 3, 6)])
     for day in range(1, 31):
+'''
