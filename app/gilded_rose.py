@@ -14,6 +14,7 @@ class Gilded_rose(object):
     def update_quality(self):
         for day in range(1, 31):
             for item in self.items:
+                print(item)
                 item.update_item()
 
     def updated_items(self):
@@ -32,4 +33,3 @@ if __name__ == "__main__":
         Backstage_passes("Backstage passes to a TAFKAL80ETC concert", 5, 49),
         Conjured("Conjured Mana Cake", 3, 6)])
     lista_items.update_quality()
-    print(lista_items.updated_items())
