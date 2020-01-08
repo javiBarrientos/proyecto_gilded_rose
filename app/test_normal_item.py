@@ -8,13 +8,13 @@ def test_primer_caso():
 
 
 def test_segundo_caso():
+    regla = Normal_item("regla", 5, 20)
+    regla.update_item()
+    assert regla.updated_item() == ("regla", 4, 19)
+
+
+def test_tercer_caso():
     taza = Normal_item("taza", 10, 10)
     for x in range(1, 21):
         taza.update_item()
     assert taza.updated_item() == ("taza", -10, 0)
-
-
-def test_tercer_caso():
-    regla = Normal_item("regla", 5, 20)
-    regla.update_item()
-    assert regla.updated_item() == ("regla", 4, 19)
