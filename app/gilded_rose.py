@@ -15,19 +15,15 @@ class Gilded_rose(object):
         for item in self.inventario:
             self.update_quality()
 
-    def inventario(self):
-        traje_destreza = Normal_item("traje_destreza", 10, 20)
-        queso = Aged_brie("aged_brie", 2, 0)
-        pocion_mongoose = Normal_item("pocion_mongoose", 5, 7)
-        mano_de_ragnaros = Sulfuras("mano_de_ragnarores", 0, 80)
-        mano_de_ragnarores_1 = Sulfuras("mano_de_ragnarores", -1, 80)
-        pase_rock = Backstage_passes("pase_rock", 15, 20)
-        pase_kpop = Backstage_passes("pase_rock", 10, 49)
-        pase_ozuna = Backstage_passes("pase_rock", 5, 49)
-        pastel_mana = Conjured("patel_mana", 3, 6)
 
-        lista_inventario = [traje_destreza, queso, pocion_mongoose,
-                            mano_de_ragnaros, mano_de_ragnarores_1, pase_rock,
-                            pase_kpop, pase_ozuna, pastel_mana]
-
-        return lista_inventario
+if __name__ == "__main__":
+    lista_items = Gilded_rose([
+        Normal_item("+ 5 Dexterity Vest", 10, 20),
+        Aged_brie("Aged Brie", 2, 0),
+        Normal_item("Elixir of the Mongoose", 5, 7),
+        Sulfuras("Sulfuras, Hand of Ragnaros", 0, 80),
+        Sulfuras("Sulfuras, Hand of Ragnaros", 0, 80),
+        Backstage_passes("Backstage passes to a TAFKAL80ETC concert", 15, 20),
+        Backstage_passes("Backstage passes to a TAFKAL80ETC concert", 10, 49),
+        Backstage_passes("Backstage passes to a TAFKAL80ETC concert", 5, 49),
+        Conjured("Conjured Mana Cake", 3, 6)])
