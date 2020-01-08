@@ -9,6 +9,6 @@ def test_primer_caso():
 
 def test_segundo_caso():
     pato = Aged_brie("pato", 10, 0)
-    for day in range(1, 11):
+    for day in range(1, 31):
         pato.update_item()
-    assert pato.updated_item() == ("pato", 0, 10)
+    assert pato.updated_item() == ("pato", -20, 50)

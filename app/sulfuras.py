@@ -8,12 +8,10 @@ class Sulfuras(Normal_item):
         self.quality = quality
 
     def update_sell_in(self):
-        assert self.sell_in == 0
-        return self.sell_in
+        pass
 
     def update_quality(self):
-        assert self.quality == 80
-        return self.quality
+        pass
 
     def update_item(self):
         Sulfuras.update_sell_in(self)
