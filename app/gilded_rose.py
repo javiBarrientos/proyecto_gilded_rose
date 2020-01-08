@@ -13,6 +13,7 @@ class Gilded_rose(object):
 
     def update_quality(self):
         for day in range(1, 31):
+            print("<---------------------------->")
             for item in self.items:
                 print(item)
                 item.update_item()
