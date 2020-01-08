@@ -12,4 +12,16 @@ class Gilded_rose(object):
         self.items = items
 
     def update_quality(self):
-        pass
+        for item in self.items:
+            self.update_quality()
+
+    def inventario(self):
+        traje_destreza = Normal_item()
+        queso = Aged_brie()
+        pocion_mongoose = Normal_item()
+        sulfuro = Sulfuras()
+        sulfuro_1 = Sulfuras()
+        pase_rock = Backstage_passes()
+        pase_kpop = Backstage_passes()
+        pase_ozuna = Backstage_passes()
+        pastel_mana = Conjured()
