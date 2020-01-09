@@ -15,7 +15,11 @@ def index():
 
 @app.route('/inventario/')
 def inventario():
+<<<<<<< HEAD
     return 'Lista de objetos en el inventario'
+=======
+    return '<h1>prueba</h1>'
+>>>>>>> preprod_javi
 
 
 if __name__ == '__main__':
