@@ -9,7 +9,7 @@ def index():
 
 @app.route('/inventario')
 def inventario():
-    return 'eis'
+    return '<h1>prueba</h1>'
 
 
 if __name__ == '__main__':
