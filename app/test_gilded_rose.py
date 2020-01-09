@@ -1,3 +1,4 @@
+'''
 from gilded_rose import Gilded_rose
 from aged_brie import Aged_brie
 from backstage_passes import Backstage_passes
@@ -29,3 +30,4 @@ def test_dia_0():
         Backstage_passes("Backstage passes to a TAFKAL80ETC concert", 4, 0),
         Conjured("Conjured Mana Cake", 2, 4)])
     assert lista_items() == updated_items()
+'''
