@@ -18,9 +18,20 @@ def index():
 def inventario():
     return render_template('inventario.html')
 
+
 @app.route('/updateInventario/')
 def updateInventario():
     return render_template('updateInventario.html')
+
+
+@app.route('/createItem')
+def createItem():
+    return render_template('createInventario.html')
+
+
+@app.route('/deleteItem')
+def deleteItem():
+    return render_template('deleteItem.html')
 
 
 if __name__ == '__main__':
