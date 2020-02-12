@@ -18,6 +18,8 @@ def index():
 def inventario():
     return render_template('inventario.html')
 
+@app.route('/updateInventario/')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
