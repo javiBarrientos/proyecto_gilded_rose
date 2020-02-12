@@ -16,15 +16,13 @@ def index():
 
 @app.route('/inventario/')
 def inventario():
-<<<<<<< HEAD
     return render_template('inventario.html')
+
 
 @app.route('/updateInventario/')
 def updateInventario():
     return render_template('updateInventario.html')
-=======
     return 'Lista de objetos en el inventario'
->>>>>>> 78bc007f5e794e84218c1fdd5d47e51169a316f5
 
 
 if __name__ == '__main__':
