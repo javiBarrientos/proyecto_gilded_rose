@@ -19,6 +19,8 @@ def inventario():
     return render_template('inventario.html')
 
 @app.route('/updateInventario/')
+def updateInventario():
+    return render_template('updateInventario.html')
 
 
 if __name__ == '__main__':
