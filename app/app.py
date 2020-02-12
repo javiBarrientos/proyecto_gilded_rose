@@ -5,21 +5,22 @@ from aged_brie import Aged_brie
 from backstage_passes import Backstage_passes
 from sulfuras import Sulfuras
 from conjured import Conjured
+from flask import render_template
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
-    return '<h1>Hello World!</h1>'
+    return render_template('index.html')
 
 
 @app.route('/inventario/')
 def inventario():
-<<<<<<< HEAD
-    return 'Lista de objetos en el inventario'
-=======
-    return '<h1>prueba</h1>'
->>>>>>> preprod_javi
+    return render_template('inventario.html')
+
+@app.route('/updateInventario/')
+def updateInventario():
+    return render_template('updateInventario.html')
 
 
 if __name__ == '__main__':
