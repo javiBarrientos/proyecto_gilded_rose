@@ -1,0 +1,30 @@
+{
+    "items":
+    [
+        {
+            "name": "Aged brie",
+            "sell in": 4,
+            "quality": 20
+        },
+        {
+            "name": "Normal item",
+            "sell in": 2,
+            "quality": 10
+        },
+        {
+            "name": "Sulfuras",
+            "sell in": 80,
+            "quality": 80
+        },
+        {
+            "name": "Backstage passes",
+            "sell in": 5,
+            "quality": 30
+        },
+        {
+            "name": "Conjured",
+            "sell in": 7,
+            "quality": 3
+        }
+    ]
+}
