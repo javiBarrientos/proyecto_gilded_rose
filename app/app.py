@@ -19,6 +19,11 @@ def inventario():
     return render_template('inventario.html')
 
 
+@app.route('/backend/')
+def backend():
+    return render_template('backend.html')
+
+
 @app.route('/updateInventario/')
 def updateInventario():
     return render_template('updateInventario.html')
