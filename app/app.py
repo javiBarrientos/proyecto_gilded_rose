@@ -39,6 +39,11 @@ def deleteItem():
     return render_template('deleteItem.html')
 
 
+@app.route('/producte')
+def producteItem():
+    return render_template('producte.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
 
