@@ -12,8 +12,13 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
+<!--De forma estatica añadidos un fondo de pantalla en index, para diferenciarlo del backend-->
 <body background="../static/ollivander.jpg">
+
+    <!--Navbar para mostrar el inventario poder e ir al backed y un buscador de items-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <!--Imagen estatica de ollivander-->
         <a class="navbar-brand" href="#"><img src="../static/olivander.png" width="50%"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,6 +34,8 @@
                     <a class="nav-link" href="/backend">Backend</a>
                 </li>
             </ul>
+
+            <!--Formulario de busqueda de items-->
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
