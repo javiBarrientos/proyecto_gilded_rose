@@ -1,5 +1,7 @@
 ## Proyecto Ollivanders wands shop
 
+Clases dadas por dfleta: GildedRose y Item.
+
 # Tareas a realizar
 
 - Refactoriza el código de la lógica para que sea fácil de entender, barato de modificar y no cambie el comportamiento observable del código existente.
